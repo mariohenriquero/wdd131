@@ -1,0 +1,136 @@
+/* Definições Gerais e Tipografia */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    /* Cor de fundo suave para a página */
+    color: #333;
+    /* Cor do texto geral */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/* Cabeçalho (Header) */
+header {
+    background-color: #003366;
+    /* Azul escuro elegante */
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+    font-size: 1.8rem;
+}
+
+/* Barra de Navegação (Menu usando CSS Flex) */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #002244;
+    /* Um azul ainda mais escuro para o menu */
+    padding: 12px;
+    flex-wrap: wrap;
+    /* Faz o menu quebrar linha se a tela for pequena */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efeito Hover (Quando passa o mouse por cima dos links) */
+nav a:hover {
+    background-color: #fff;
+    color: #003366;
+}
+
+/* Conteúdo Principal (Centralizado e com Largura Máxima) */
+main {
+    max-width: 840px;
+    margin: 30px auto;
+    padding: 0 20px;
+    flex: 1;
+    /* Garante que o rodapé fique sempre na parte de baixo da tela */
+}
+
+main h2 {
+    color: #003366;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 10px;
+}
+
+/* Organização dos Cartões (Usando CSS Grid) */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Estilo Individual de cada Cartão (Cards) */
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #002244;
+    background-color: #e6f2ff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Rodapé (Footer) */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+#ultimaModificacao {
+    color: #ffcc00;
+    /* Cor amarelada para destacar a data de modificação */
+    font-weight: bold;
+}
