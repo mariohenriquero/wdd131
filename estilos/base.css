@@ -28,6 +28,14 @@ header {
     text-align: center;
 }
 
+header h1 span {
+    display: block;
+    font-size: 1.2rem;
+    color: #ffcc00;
+    /* Dá uma cor de destaque para o código da matéria */
+}
+
+
 header h1 {
     margin: 0 0 15px 0;
     font-size: 1.8rem;
