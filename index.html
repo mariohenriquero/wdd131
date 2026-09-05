@@ -9,10 +9,10 @@
         content="WDD 131 – Fundamentos da Web Dinâmica. Desenvolvido por Mário Henrique. Página inicial do curso contendo perfil, links de projetos e recursos de estudo.">
     <meta name="author" content="Mário Henrique">
 
-    <!-- Link do Google Fonts (Roboto e Open Sans) -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap"
+    <!-- Correção dos links do Google Fonts (Adicionado o 'fonts.') -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
 
     <!-- Link para o CSS Externo -->
@@ -24,46 +24,41 @@
 
 <body>
 
+    <!-- Estrutura do Header limpa e sem duplicar tags -->
     <header>
-        <header>
-            <h1><span>WDD 131</span>: Fundamentos da Web Dinâmica</h1>
-            <nav>
-                ...
+        <h1><span>WDD 131</span>: Fundamentos da Web Dinâmica</h1>
+        <nav>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://instructure.com" target="_blank">Canvas</a>
+            <!-- Link oficial completo para a sua escritura favorita de 1 Néfi 3:7 -->
+            <a href="https://churchofjesuschrist.org" target="_blank">Escritura Favorita</a>
+            <a href="#">Projeto Final</a>
+        </nav>
+    </header>
 
-                <nav>
-                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                    <a href="https://instructure.com" target="_blank">Canvas</a>
-                    <!-- Link configurado para a escritura de 1 Néfi 3:7 que você estava lendo -->
-                    <a href="https://churchofjesuschrist.org" target="_blank">Escritura Favorita</a>
-                    <a href="#">Projeto Final</a>
-                </nav>
-        </header>
+    <main>
+        <h2>Mário Henrique</h2>
 
-        <main>
-            <h2>Mário Henrique</h2>
+        <div class="grid-container">
+            <section class="card">
+                <h3>Sobre Mim</h3>
+                <img src="imagens/perfil.jpg" alt="Foto de Mário Henrique" width="300" height="200">
+                <p>Olá! Meu nome é Mário Henrique e esta é a minha página de perfil do curso WDD 131.</p>
+            </section>
 
-            <div class="grid-container">
-                <section class="card">
-                    <h3>Sobre Mim</h3>
-                    <img src="imagens/perfil.jpg" alt="Foto de Mário Henrique" width="300" height="200">
-                    <p>Olá! Meu nome é Mário Henrique e esta é a minha página de perfil do curso WDD 131.</p>
-                </section>
+            <section class="card">
+                <h3>Informações do Curso</h3>
+                <img src="imagens/dev.webp" alt="Ícone representativo do curso" width="300" height="200">
+                <p>Espaço reservado para atualizações do curso, descrição das atividades semanais e progresso do
+                    aprendizado.</p>
+            </section>
+        </div>
+    </main>
 
-                <section class="card">
-                    <h3>Informações do Curso</h3>
-                    <!-- Atualizado com a extensão correta (.webp) -->
-                    <img src="imagens/dev.webp" alt="Ícone representativo do curso" width="300" height="200">
-                    <p>Espaço reservado para atualizações do curso, descrição das atividades semanais e progresso do
-                        aprendizado.</p>
-                </section>
-            </div>
-        </main>
-
-
-        <footer>
-            <p>&copy; <span id="anoatual"></span> | Mário Henrique | Brasil</p>
-            <p id="ultimaModificacao"></p>
-        </footer>
+    <footer>
+        <p>&copy; <span id="anoatual"></span> | Mário Henrique | Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
 
 </body>
 
