@@ -1,12 +1,14 @@
-/* Definições Gerais e Tipografia */
+```css
+/* ================================
+   DEFINIÇÕES GERAIS
+   ================================ */
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
-    /* Cor de fundo suave para a página */
     color: #333;
-    /* Cor do texto geral */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -19,42 +21,47 @@ h3 {
     text-align: center;
 }
 
-/* Cabeçalho (Header) */
+
+/* ================================
+   CABEÇALHO
+   ================================ */
+
 header {
     background-color: #003366;
-    /* Azul escuro elegante */
-    color: #fff;
+    color: #ffffff;
     padding: 1.5rem 1rem;
     text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+    font-size: 1.8rem;
+    color: #ffffff;
 }
 
 header h1 span {
     display: block;
     font-size: 1.2rem;
     color: #ffcc00;
-    /* Dá uma cor de destaque para o código da matéria */
 }
 
 
-header h1 {
-    margin: 0 0 15px 0;
-    font-size: 1.8rem;
-}
+/* ================================
+   MENU DE NAVEGAÇÃO
+   ================================ */
 
-/* Barra de Navegação (Menu usando CSS Flex) */
 nav {
     display: flex;
     justify-content: center;
     gap: 20px;
     background-color: #002244;
-    /* Um azul ainda mais escuro para o menu */
+    color: #ffffff;
     padding: 12px;
     flex-wrap: wrap;
-    /* Faz o menu quebrar linha se a tela for pequena */
 }
 
 nav a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 600;
     padding: 6px 12px;
@@ -62,19 +69,21 @@ nav a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Efeito Hover (Quando passa o mouse por cima dos links) */
 nav a:hover {
-    background-color: #fff;
+    background-color: #ffffff;
     color: #003366;
 }
 
-/* Conteúdo Principal (Centralizado e com Largura Máxima) */
+
+/* ================================
+   CONTEÚDO PRINCIPAL
+   ================================ */
+
 main {
     max-width: 840px;
     margin: 30px auto;
     padding: 0 20px;
     flex: 1;
-    /* Garante que o rodapé fique sempre na parte de baixo da tela */
 }
 
 main h2 {
@@ -84,16 +93,24 @@ main h2 {
     padding-bottom: 10px;
 }
 
-/* Organização dos Cartões (Usando CSS Grid) */
+
+/* ================================
+   GRID DOS CARDS
+   ================================ */
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
 }
 
-/* Estilo Individual de cada Cartão (Cards) */
+
+/* ================================
+   CARDS
+   ================================ */
+
 .card {
-    background-color: #fff;
+    background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 20px;
@@ -123,10 +140,45 @@ main h2 {
     color: #555;
 }
 
-/* Rodapé (Footer) */
+
+/* ================================
+   WEB DEV RESOURCES
+   ================================ */
+
+.resources-card {
+    text-align: left;
+}
+
+.resources-card h3 {
+    text-align: center;
+}
+
+.resources-card ul {
+    margin: 20px 0 0 0;
+    padding-left: 25px;
+}
+
+.resources-card li {
+    margin-bottom: 12px;
+}
+
+.resources-card a {
+    color: #003366;
+    font-weight: 600;
+}
+
+.resources-card a:hover {
+    color: #005599;
+}
+
+
+/* ================================
+   RODAPÉ
+   ================================ */
+
 footer {
     background-color: #003366;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
     margin-top: auto;
@@ -139,6 +191,27 @@ footer p {
 
 #ultimaModificacao {
     color: #ffcc00;
-    /* Cor amarelada para destacar a data de modificação */
     font-weight: bold;
 }
+
+
+/* ================================
+   RESPONSIVIDADE
+   ================================ */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header h1 span {
+        font-size: 1rem;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        ```
