@@ -16,10 +16,14 @@ header {
     padding: 1rem;
 }
 
+/* ALTERADO: Organiza os elementos em coluna para empilhar os títulos perfeitamente */
 .header-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 8px;
+    position: relative;
+    /* Base para posicionar o botão do menu hambúrguer */
 }
 
 .site-title {
@@ -28,7 +32,23 @@ header {
     font-weight: 700;
 }
 
+/* ADICIONADO: Estilização do ID obrigatório exigido pela auditoria */
+#titulo-curso {
+    display: block;
+    font-size: 0.95rem;
+    color: #ffcc00;
+    /* Cor amarela para dar o mesmo destaque do rodapé */
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* ALTERADO: Posiciona o botão hambúrguer no canto direito da tela de forma fixa no mobile */
 .menu-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: transparent;
     border: none;
     color: #ffffff;
