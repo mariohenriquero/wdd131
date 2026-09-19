@@ -65,6 +65,8 @@
     }
 }
 
+/* Certifique-se de que esta chave fecha corretamente o bloco de 600px */
+
 @media (min-width: 900px) {
     .temple-grid {
         grid-template-columns: repeat(3, 1fr);
