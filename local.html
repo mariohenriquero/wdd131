@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Santos, São Paulo | WDD 131</title>
+
+    <meta name="description" content="Conheça Santos, uma cidade litorânea do estado de São Paulo, Brasil.">
+
+    <meta name="author" content="Mário Henrique">
+
+    <link rel="stylesheet" href="estilos/local.css">
+
+    <script src="scripts/local.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Santos, São Paulo</h1>
+        <p>Brasil</p>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 700px)" srcset="imagens/santos-large.webp">
+                <img src="imagens/santos.webp" alt="Vista da orla de Santos com a praia e os edifícios" loading="lazy">
+            </picture>
+        </section>
+
+        <section class="content">
+
+            <div class="card data">
+                <h2>Dados</h2>
+
+                <dl>
+                    <div>
+                        <dt>Área:</dt>
+                        <dd>281,03 km²</dd>
+                    </div>
+
+                    <div>
+                        <dt>Estado:</dt>
+                        <dd>São Paulo</dd>
+                    </div>
+
+                    <div>
+                        <dt>País:</dt>
+                        <dd>Brasil</dd>
+                    </div>
+
+                    <div>
+                        <dt>Idioma:</dt>
+                        <dd>Português</dd>
+                    </div>
+
+                    <div>
+                        <dt>Moeda:</dt>
+                        <dd>Real brasileiro</dd>
+                    </div>
+
+                    <div>
+                        <dt>Fuso horário:</dt>
+                        <dd>UTC−3</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div class="card weather">
+                <h2>Clima</h2>
+
+                <img class="weather-icon" src="imagens/partly-cloudy.svg" alt="Ícone de tempo parcialmente nublado">
+
+                <div class="weather-info">
+                    <p><strong>Temperatura:</strong> <span id="temperatura">24</span> °C</p>
+
+                    <p><strong>Condição:</strong> Parcialmente nublado</p>
+
+                    <p><strong>Velocidade do vento:</strong>
+                        <span id="vento">15</span> km/h
+                    </p>
+
+                    <p><strong>Sensação térmica:</strong>
+                        <span id="sensacao">N/A</span>
+                    </p>
+                </div>
+            </div>
+
+            <section class="about">
+                <h2>Sobre Santos</h2>
+
+                <p>
+                    Santos é uma cidade localizada no litoral do estado de São Paulo.
+                    Conhecida por suas praias, jardins e pelo importante porto,
+                    a cidade combina atividades turísticas, história e vida urbana.
+                </p>
+
+                <p>
+                    A cidade também é conhecida pelo seu extenso jardim da orla,
+                    que acompanha grande parte das praias e é um dos espaços
+                    característicos do município.
+                </p>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> | Mário Henrique | Santos, Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+
+</body>
+
+</html>
