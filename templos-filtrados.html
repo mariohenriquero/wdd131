@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum do Templo - WDD 131</title>
+    <meta name="description"
+        content="Álbum de imagens de templos desenvolvido para o curso WDD 131 – Fundamentos da Web Dinâmica.">
+    <meta name="author" content="Mário Henrique">
+
+    <!-- Google Fonts (Links da API corrigidos para a auditoria) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <!-- CSS Obrigatórios -->
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/templos-filtrados.css">
+    <link rel="stylesheet" href="estilos/templos-filtrados-grandes.css">
+
+    <!-- JavaScript Obrigatório -->
+    <!-- JavaScript Obrigatórios (ADICIONE A LINHA ABAIXO AQUI) -->
+    <script src="scripts/dados-templos.js" defer></script>
+    <script src="scripts/templos-filtrados.js" defer></script>
+    <script src="scripts/obterdatas.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <span class="site-title">Álbum do Templo</span>
+            <!-- Elemento obrigatório adicionado para a auditoria -->
+            <span id="titulo-curso">WDD 131 - Fundamentos da Web Dinâmica</span>
+
+            <button id="menu-button" class="menu-button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        </div>
+        <nav id="main-nav">
+            <a href="#" data-filtro="todos">Página Inicial</a>
+            <a href="#" data-filtro="antigo">Antigo</a>
+            <a href="#" data-filtro="novo">Novo</a>
+            <a href="#" data-filtro="grande">Grande</a>
+            <a href="#" data-filtro="pequeno">Pequeno</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- Primeira Section Card: Título e Introdução -->
+        <section class="card">
+            <h1>Álbum de Templos</h1>
+            <p>Explore a galeria de templos selecionados para o projeto de Fundamentos da Web Dinâmica.</p>
+        </section>
+
+        <!-- Segunda Section Card: Envolvendo a Grid de Imagens -->
+        <section class="card">
+            <div class="temple-grid" id="temple-grid">
+                <!-- Cartões gerados dinamicamente via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> | Mário Henrique | Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+
+</body>
+
+</html>
