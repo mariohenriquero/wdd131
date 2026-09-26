@@ -48,4 +48,25 @@ const templos = [
         area: 116642,
         urlDaImagem: "imagens/cidade-do-mexico.webp"
     }
+    {
+        nomeDoTemplo: "São Paulo Brasil",
+        localizacao: "São Paulo, Brasil",
+        consagracao: "1978-10-30",
+        area: 22000,
+        urlDaImagem: "imagens/sao-paulo-brasil.webp"
+    },
+    {
+        nomeDoTemplo: "Cardston Alberta",
+        localizacao: "Cardston, Alberta, Canadá",
+        consagracao: "1923-08-26",
+        area: 24000,
+        urlDaImagem: "imagens/cardston-alberta.webp"
+    },
+    {
+        nomeDoTemplo: "Roma Itália",
+        localizacao: "Roma, Itália",
+        consagracao: "2019-03-10",
+        area: 40000,
+        urlDaImagem: "imagens/roma-italia.webp"
+    }
 ];
