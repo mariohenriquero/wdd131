@@ -47,7 +47,7 @@ const templos = [
         consagracao: "1983-12-02",
         area: 116642,
         urlDaImagem: "imagens/cidade-do-mexico.webp"
-    }
+    },
     {
         nomeDoTemplo: "São Paulo Brasil",
         localizacao: "São Paulo, Brasil",
