@@ -1,0 +1,237 @@
+:root {
+    --cor-principal: #1F3A5F;
+    --cor-destaque: #B45309;
+    --cor-fundo: #F3F6FA;
+    --cor-cartao: #FFFFFF;
+    --cor-texto: #1F2933;
+    --cor-borda: #8896A8;
+    --cor-estrela-vazia: #6B7280;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+header {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: var(--cor-principal);
+}
+
+header h1 {
+    margin: 0 0 0.5rem;
+    font-family: "Roboto Slab", Georgia, serif;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    width: min(640px, 92%);
+    margin: 1.5rem auto 2rem;
+}
+
+form,
+.confirmacao {
+    padding: 1.5rem;
+    background-color: var(--cor-cartao);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+}
+
+.campo {
+    margin-bottom: 1.5rem;
+}
+
+label,
+legend {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    color: var(--cor-principal);
+}
+
+.opcional {
+    font-weight: 400;
+    color: #4B5563;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    font: inherit;
+    color: var(--cor-texto);
+    background-color: #FFFFFF;
+    border: 1px solid var(--cor-borda);
+    border-radius: 6px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+select:focus,
+input:focus-visible,
+textarea:focus {
+    outline: 3px solid var(--cor-destaque);
+    outline-offset: 2px;
+}
+
+fieldset {
+    margin: 0 0 1.5rem;
+    padding: 0;
+    border: none;
+}
+
+legend {
+    padding: 0;
+}
+
+.dica {
+    margin: 0 0 0.5rem;
+    font-size: 0.95rem;
+    color: #4B5563;
+}
+
+/* Checkboxes */
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.4rem;
+}
+
+.opcao input {
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: var(--cor-principal);
+}
+
+.opcao label {
+    margin: 0;
+    font-weight: 400;
+    color: var(--cor-texto);
+}
+
+/* Estrelas */
+.estrelas {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.estrela {
+    margin: 0;
+    cursor: pointer;
+}
+
+.estrela input,
+.so-leitor {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.estrela .icone {
+    display: block;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--cor-estrela-vazia);
+}
+
+.estrela:has(input:checked) .icone,
+.estrela:has(~ .estrela input:checked) .icone {
+    color: var(--cor-destaque);
+}
+
+.estrela:has(input:focus-visible) {
+    outline: 3px solid var(--cor-principal);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Botões */
+input[type="submit"],
+.botao {
+    display: inline-block;
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    font: inherit;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: var(--cor-principal);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+.botao:hover {
+    background-color: #162B47;
+}
+
+input[type="submit"]:focus-visible,
+.botao:focus-visible {
+    outline: 3px solid var(--cor-destaque);
+    outline-offset: 2px;
+}
+
+/* Confirmação */
+.confirmacao h2 {
+    margin-top: 0;
+    font-family: "Roboto Slab", Georgia, serif;
+    color: var(--cor-principal);
+}
+
+.confirmacao strong {
+    font-size: 1.5rem;
+    color: var(--cor-destaque);
+}
+
+.confirmacao .botao {
+    margin-top: 1rem;
+}
+
+footer {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: var(--cor-principal);
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+
+@media screen and (min-width: 700px) {
+
+    form,
+    .confirmacao {
+        padding: 2.5rem;
+    }
+
+    input[type="submit"],
+    .botao {
+        width: auto;
+    }
+}
