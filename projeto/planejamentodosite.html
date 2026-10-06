@@ -10,7 +10,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="planejamento.css">
@@ -18,6 +19,7 @@
 
 <body>
     <header>
+        <img class="logo-cabecalho" src="futebolcontexto.logo.jpg" alt="Logotipo do FutebolContexto">
         <h1>Planejamento do Site</h1>
         <p>FutebolContexto</p>
     </header>
@@ -40,6 +42,17 @@
                 "Contexto", destacando a proposta de apresentar informações,
                 histórias e curiosidades de forma contextualizada.
             </p>
+
+            <h3>Logotipo</h3>
+
+            <img class="logo-exemplo" src="futebolcontexto.logo.jpg" alt="Logotipo do FutebolContexto">
+
+            <p>
+                O logotipo identifica o FutebolContexto e será usado no cabeçalho
+                das páginas do site. Ele foi pensado para combinar com o esquema
+                de cores e com a proposta editorial do projeto, reforçando a
+                identidade visual ligada ao futebol brasileiro.
+            </p>
         </section>
 
         <section>
@@ -60,6 +73,7 @@
                 do futebol brasileiro.
             </p>
         </section>
+
         <section>
             <h2>Cenários</h2>
 
@@ -82,6 +96,7 @@
                 </li>
             </ul>
         </section>
+
         <section>
             <h2>Esquema de Cores</h2>
 
@@ -91,25 +106,41 @@
                 aparência profissional, limpa e fácil de utilizar.
             </p>
 
-            <ul>
+            <ul class="lista-cores">
                 <li>
-                    <strong>Verde escuro (#0B3D2E):</strong> será utilizado no
-                    cabeçalho, nos títulos principais e no rodapé do site.
+                    <span class="amostra verde" aria-hidden="true"></span>
+                    <span>
+                        <strong>Verde escuro (#0B3D2E):</strong> será utilizado no
+                        cabeçalho, nos títulos principais e no rodapé do site.
+                    </span>
                 </li>
                 <li>
-                    <strong>Amarelo (#F2C94C):</strong> será utilizado em destaques,
-                    botões e elementos de interação.
+                    <span class="amostra amarelo" aria-hidden="true"></span>
+                    <span>
+                        <strong>Amarelo (#F2C94C):</strong> será utilizado em
+                        destaques, botões, bordas e elementos de interação. Por ter
+                        pouco contraste com fundos claros, não será usado como cor
+                        de texto sobre branco ou cinza claro, apenas sobre o verde
+                        escuro.
+                    </span>
                 </li>
                 <li>
-                    <strong>Branco (#FFFFFF):</strong> será utilizado como fundo
-                    principal e para textos sobre fundos escuros.
+                    <span class="amostra branco" aria-hidden="true"></span>
+                    <span>
+                        <strong>Branco (#FFFFFF):</strong> será utilizado como fundo
+                        principal e para textos sobre fundos escuros.
+                    </span>
                 </li>
                 <li>
-                    <strong>Cinza claro (#F4F4F4):</strong> será utilizado no fundo
-                    de algumas seções e cartões de conteúdo.
+                    <span class="amostra cinza" aria-hidden="true"></span>
+                    <span>
+                        <strong>Cinza claro (#F4F4F4):</strong> será utilizado no
+                        fundo de algumas seções e cartões de conteúdo.
+                    </span>
                 </li>
             </ul>
         </section>
+
         <section>
             <h2>Tipografia</h2>
 
@@ -129,13 +160,30 @@
                     informações complementares e demais textos do site.
                 </li>
             </ul>
+
+            <h3>Exemplos</h3>
+
+            <div class="amostra-fonte">
+                <p class="amostra-slab">A história por trás de cada jogo</p>
+                <p class="legenda">Roboto Slab, para títulos, manchetes e nomes das matérias.</p>
+            </div>
+
+            <div class="amostra-fonte">
+                <p class="amostra-roboto">
+                    Descubra curiosidades, personagens e momentos que ajudaram a
+                    construir a história do futebol brasileiro.
+                </p>
+                <p class="legenda">Roboto, para parágrafos, menus e informações complementares.</p>
+            </div>
         </section>
+
         <section>
             <h2>Wireframe</h2>
 
             <h3>Visualização Mobile</h3>
 
-            <pre>
+            <pre role="img"
+                aria-label="Wireframe da página inicial em versão mobile: cabeçalho com nome do site, menu, destaque com imagem, título e descrição, duas histórias com imagem e título, e rodapé.">
 ┌────────────────────────────┐
 │     FUTEBOLCONTEXTO        │
 ├────────────────────────────┤
@@ -159,12 +207,12 @@
 │  └──────────────────────┘  │
 ├────────────────────────────┤
 │          RODAPÉ            │
-└────────────────────────────┘
-    </pre>
+└────────────────────────────┘</pre>
 
             <h3>Visualização Desktop</h3>
 
-            <pre>
+            <pre role="img"
+                aria-label="Wireframe da página inicial em versão desktop: cabeçalho com nome do site, menu horizontal com Início, Histórias, Curiosidades e Sobre, destaque principal com imagem, título e descrição, três histórias lado a lado e rodapé.">
 ┌───────────────────────────────────────────────────────────┐
 │                    FUTEBOLCONTEXTO                        │
 ├───────────────────────────────────────────────────────────┤
@@ -181,7 +229,7 @@
 │              Breve descrição da matéria                   │
 │                                                           │
 ├───────────────────────────────────────────────────────────┤
-│                       HISTÓRIAS                            │
+│                       HISTÓRIAS                           │
 │                                                           │
 │   ┌──────────────┐ ┌──────────────┐ ┌──────────────┐      │
 │   │    IMAGEM    │ │    IMAGEM    │ │    IMAGEM    │      │
@@ -189,9 +237,8 @@
 │   └──────────────┘ └──────────────┘ └──────────────┘      │
 │                                                           │
 ├───────────────────────────────────────────────────────────┤
-│                         RODAPÉ                             │
-└───────────────────────────────────────────────────────────┘
-    </pre>
+│                         RODAPÉ                            │
+└───────────────────────────────────────────────────────────┘</pre>
         </section>
     </main>
 
