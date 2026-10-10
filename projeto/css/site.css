@@ -1,0 +1,312 @@
+/* ===== Configurações gerais ===== */
+:root {
+    --verde-escuro: #0B3D2E;
+    --amarelo: #F2C94C;
+    --branco: #FFFFFF;
+    --cinza-claro: #F4F4F4;
+    --texto: #252525;
+    --largura-maxima: 1100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--texto);
+    background-color: var(--branco);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--verde-escuro);
+}
+
+a:hover {
+    text-decoration-thickness: 2px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--amarelo);
+    outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Roboto Slab", Georgia, serif;
+    line-height: 1.25;
+}
+
+h2 {
+    color: var(--verde-escuro);
+}
+
+/* ===== Cabeçalho ===== */
+header {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: var(--branco);
+    background-color: var(--verde-escuro);
+}
+
+.logo-link {
+    display: inline-block;
+}
+
+.logo-link img {
+    width: 120px;
+    max-height: 120px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0.75rem 0 0.25rem;
+}
+
+header p {
+    margin: 0 0 1.25rem;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 0.5rem 0.85rem;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+header nav a:hover,
+header nav a:focus-visible {
+    color: var(--verde-escuro);
+    background-color: var(--amarelo);
+}
+
+/* ===== Conteúdo principal ===== */
+main {
+    width: calc(100% - 2rem);
+    max-width: var(--largura-maxima);
+    margin: 0 auto;
+}
+
+.destaque {
+    margin: 2rem 0;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    background-color: var(--cinza-claro);
+    border-left: 6px solid var(--amarelo);
+    border-radius: 6px;
+}
+
+.destaque h2 {
+    margin-top: 0;
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+
+.conteudo {
+    margin: 2.5rem 0;
+}
+
+.conteudo>h2 {
+    margin-bottom: 1rem;
+}
+
+/* ===== Botões e cartões ===== */
+.botao,
+button {
+    display: inline-block;
+    padding: 0.75rem 1.1rem;
+    border: 2px solid var(--verde-escuro);
+    border-radius: 5px;
+    color: var(--branco);
+    background-color: var(--verde-escuro);
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao:hover,
+button:hover {
+    color: var(--verde-escuro);
+    background-color: var(--amarelo);
+}
+
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.cartao {
+    padding: 1.5rem;
+    background-color: var(--cinza-claro);
+    border-radius: 6px;
+    border-top: 4px solid var(--verde-escuro);
+}
+
+.cartao h3 {
+    margin-top: 0;
+    color: var(--verde-escuro);
+}
+
+.cartao a {
+    font-weight: 700;
+}
+
+/* ===== Formulários ===== */
+form {
+    display: grid;
+    gap: 0.75rem;
+    max-width: 600px;
+}
+
+label {
+    font-weight: 700;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #767676;
+    border-radius: 4px;
+    font: inherit;
+}
+
+form button {
+    justify-self: start;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#mensagem-form {
+    margin: 0;
+    font-weight: 700;
+}
+
+#area-curiosidade {
+    margin-bottom: 1rem;
+}
+
+#resultado-busca {
+    margin-top: 1rem;
+}
+
+/* ===== Página atual no menu ===== */
+header nav a[aria-current="page"] {
+    color: var(--verde-escuro);
+    background-color: var(--amarelo);
+}
+
+/* ===== Filtros e favoritos ===== */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.filtros button {
+    color: var(--verde-escuro);
+    background-color: var(--branco);
+}
+
+.filtros button:hover,
+button[aria-pressed="true"] {
+    color: var(--verde-escuro);
+    background-color: var(--amarelo);
+}
+
+.botao-favorito {
+    margin-top: 0.5rem;
+}
+
+/* ===== Imagens ===== */
+.destaque img {
+    width: 100%;
+    aspect-ratio: 12 / 5;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.cartao img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* ===== Rodapé ===== */
+footer {
+    margin-top: 3rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: var(--branco);
+    background-color: var(--verde-escuro);
+}
+
+footer a {
+    color: var(--amarelo);
+}
+
+/* ===== Adaptação para telas menores ===== */
+@media (max-width: 600px) {
+    header {
+        padding: 1.25rem 0.75rem;
+    }
+
+    header nav ul {
+        gap: 0.25rem;
+    }
+
+    header nav a {
+        padding: 0.5rem;
+    }
+
+    .destaque {
+        padding: 1.75rem 1rem;
+    }
+
+    .cartoes {
+        grid-template-columns: 1fr;
+    }
+
+    .botao,
+    form button {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça histórias, curiosidades e momentos inesquecíveis do futebol brasileiro.">
+    <meta name="author" content="Mário Henrique">
+    <title>FutebolContexto | Histórias do Futebol Brasileiro</title>
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="icon" type="image/jpeg" href="futebolcontexto.logo.jpeg">
+    <script src="js/site.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="logo-link" href="index.html">
+            <img src="futebolcontexto.logo.jpeg" alt="Logo FutebolContexto">
+        </a>
+
+        <h1>FutebolContexto</h1>
+        <p>O futebol tem histórias que merecem ser contadas.</p>
+
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="historias.html">Histórias</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="destaque">
+            <img src="imagens/destaque-estadio.webp" alt="Estádio de futebol visto da arquibancada" width="1200"
+                height="500" fetchpriority="high">
+            <h2>Muito além do placar</h2>
+            <p>
+                Relembre partidas históricas, conheça personagens marcantes
+                e descubra os contextos que transformaram o futebol brasileiro.
+            </p>
+            <a class="botao" href="historias.html">Explorar histórias</a>
+        </section>
+
+        <section class="conteudo">
+            <h2>Explore o FutebolContexto</h2>
+
+            <div class="cartoes">
+                <article class="cartao">
+                    <h3>Histórias inesquecíveis</h3>
+                    <p>
+                        Conheça os acontecimentos, as decisões e os personagens
+                        por trás de momentos importantes do futebol brasileiro.
+                    </p>
+                    <a href="historias.html">Ler histórias</a>
+                </article>
+
+                <article class="cartao">
+                    <h3>Curiosidades do futebol</h3>
+                    <p>
+                        Descubra fatos interessantes sobre jogadores, clubes
+                        e partidas que marcaram gerações.
+                    </p>
+                    <a href="curiosidades.html">Descobrir curiosidades</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="conteudo">
+            <h2>Encontre uma história</h2>
+            <p>Use a busca para explorar os conteúdos disponíveis.</p>
+
+            <form id="form-busca">
+                <label for="termo-busca">O que você quer descobrir?</label>
+                <input type="search" id="termo-busca" name="termo" placeholder="Ex.: Palmeiras, Copa do Mundo...">
+                <button type="submit">Buscar</button>
+            </form>
+
+            <div id="resultado-busca" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano-atual"></span> FutebolContexto</p>
+        <a href="referencias.html">Referências</a>
+    </footer>
+</body>
+
+</html>

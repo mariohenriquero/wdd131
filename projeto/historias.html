@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Histórias de clubes, partidas e momentos marcantes do futebol brasileiro.">
+    <meta name="author" content="Mário Henrique">
+    <title>Histórias | FutebolContexto</title>
+    <link rel="stylesheet" href="css/site.css">
+    <script src="js/site.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="logo-link" href="index.html">
+            <img src="futebolcontexto.logo.jpeg" alt="Logo FutebolContexto">
+        </a>
+
+        <h1>FutebolContexto</h1>
+        <p>O futebol tem histórias que merecem ser contadas.</p>
+
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="historias.html" aria-current="page">Histórias</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <h2>Histórias do futebol brasileiro</h2>
+            <p>Escolha uma categoria para filtrar as histórias.</p>
+
+            <div id="filtros" class="filtros" role="group" aria-label="Filtrar histórias por categoria"></div>
+
+            <div id="lista-historias" class="cartoes" aria-live="polite"></div>
+        </section>
+
+        <section class="conteudo">
+            <h2>Minhas histórias favoritas</h2>
+            <div id="lista-favoritos" class="cartoes" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano-atual"></span> FutebolContexto</p>
+        <a href="referencias.html">Referências</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curiosidades sobre jogadores, clubes e acontecimentos do futebol brasileiro.">
+    <meta name="author" content="Mário Henrique">
+    <title>Curiosidades | FutebolContexto</title>
+    <link rel="stylesheet" href="css/site.css">
+    <script src="js/site.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="logo-link" href="index.html">
+            <img src="futebolcontexto.logo.jpeg" alt="Logo FutebolContexto">
+        </a>
+
+        <h1>FutebolContexto</h1>
+        <p>O futebol tem histórias que merecem ser contadas.</p>
+
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="historias.html">Histórias</a></li>
+                <li><a href="curiosidades.html" aria-current="page">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <h2>Você sabia?</h2>
+            <div id="area-curiosidade" class="cartao" aria-live="polite">
+                <p>Clique no botão para descobrir uma curiosidade do futebol brasileiro.</p>
+            </div>
+            <button type="button" id="botao-sortear">Sortear curiosidade</button>
+        </section>
+
+        <section class="conteudo">
+            <h2>Sugira uma curiosidade</h2>
+            <p>Conhece um fato interessante? Envie sua sugestão pelo formulário.</p>
+
+            <form id="form-sugestao">
+                <label for="nome">Seu nome</label>
+                <input type="text" id="nome" name="nome" minlength="2" maxlength="60" autocomplete="name" required>
+
+                <label for="categoria">Categoria</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Escolha uma categoria</option>
+                    <option value="Jogadores">Jogadores</option>
+                    <option value="Seleção">Seleção</option>
+                    <option value="Estádios">Estádios</option>
+                    <option value="Clubes">Clubes</option>
+                </select>
+
+                <label for="texto">Sua curiosidade</label>
+                <textarea id="texto" name="texto" rows="5" minlength="20" maxlength="300" required></textarea>
+
+                <button type="submit">Enviar sugestão</button>
+                <p id="mensagem-form" role="status"></p>
+            </form>
+        </section>
+
+        <section class="conteudo">
+            <h2>Suas sugestões</h2>
+            <div id="lista-sugestoes" class="cartoes" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano-atual"></span> FutebolContexto</p>
+        <a href="referencias.html">Referências</a>
+    </footer>
+</body>
+
+</html>
