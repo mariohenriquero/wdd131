@@ -8,7 +8,7 @@ const historias = [
         ano: 1970,
         resumo: "A seleção do México 70 conquistou o tricampeonato mundial e ficou conhecida como uma das maiores equipes da história.",
         imagem: "imagens/historia-copa-1970.webp",
-        alt: "Camisa da seleção brasileira de futebol"
+        alt: "Jogadores da seleção brasileira comemorando o tricampeonato mundial em 1970, com Pelé em destaque"
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ const historias = [
         ano: 1951,
         resumo: "O Palmeiras venceu a Copa Rio de 1951, torneio que reuniu grandes clubes da Europa e da América do Sul.",
         imagem: "imagens/historia-palmeiras-1951.webp",
-        alt: "Escudo do Palmeiras"
+        alt: "Jogadores do Palmeiras campeões da Copa Rio de 1951, em foto histórica colorizada"
     },
     {
         id: 3,
@@ -28,7 +28,7 @@ const historias = [
         ano: 1950,
         resumo: "A derrota para o Uruguai na final marcou o Maracanã e a memória do futebol brasileiro.",
         imagem: "imagens/historia-maracanazo-1950.webp",
-        alt: "Estádio do Maracanã, no Rio de Janeiro"
+        alt: "Lance do gol do Uruguai contra o Brasil na final da Copa de 1950, no Maracanã"
     },
     {
         id: 4,
@@ -38,7 +38,7 @@ const historias = [
         ano: 1958,
         resumo: "Aos 17 anos, Pelé marcou dois gols na final contra a Suécia, na vitória por 5 a 2, e ajudou o Brasil a conquistar o primeiro título mundial.",
         imagem: "imagens/historia-pele-1958.webp",
-        alt: "Camisa 10 da seleção brasileira"
+        alt: "Pelé sorrindo, aos 17 anos"
     },
     {
         id: 5,
@@ -48,7 +48,7 @@ const historias = [
         ano: 1981,
         resumo: "Em Tóquio, o Flamengo venceu o Liverpool por 3 a 0 e conquistou o Mundial de Clubes.",
         imagem: "imagens/historia-flamengo-1981.webp",
-        alt: "Escudo do Flamengo"
+        alt: "Time do Flamengo campeão mundial de 1981"
     },
     {
         id: 6,
@@ -58,7 +58,7 @@ const historias = [
         ano: 1982,
         resumo: "No início dos anos 1980, jogadores e comissão técnica passaram a decidir juntos, por votação, assuntos do dia a dia do clube.",
         imagem: "imagens/historia-democracia-corinthiana.webp",
-        alt: "Escudo do Corinthians"
+        alt: "Sócrates, de costas, em imagem histórica da Democracia Corinthiana"
     }
 ];
 
@@ -67,25 +67,25 @@ const curiosidades = [
         categoria: "Jogadores",
         texto: "Pelé é o único jogador que conquistou três Copas do Mundo: 1958, 1962 e 1970.",
         imagem: "imagens/historia-pele-1958.webp",
-        alt: "Camisa 10 da seleção brasileira"
+        alt: "Pelé sorrindo, aos 17 anos"
     },
     {
         categoria: "Seleção",
         texto: "O Brasil é a única seleção que disputou todas as edições da Copa do Mundo e tem cinco títulos mundiais.",
         imagem: "imagens/historia-copa-1970.webp",
-        alt: "Camisa da seleção brasileira de futebol"
+        alt: "Jogadores da seleção brasileira comemorando o tricampeonato mundial em 1970, com Pelé em destaque"
     },
     {
         categoria: "Estádios",
         texto: "O Maracanã foi inaugurado em 1950, para a Copa do Mundo disputada no Brasil.",
         imagem: "imagens/historia-maracanazo-1950.webp",
-        alt: "Estádio do Maracanã, no Rio de Janeiro"
+        alt: "Lance do gol do Uruguai contra o Brasil na final da Copa de 1950, no Maracanã"
     },
     {
         categoria: "Jogadores",
         texto: "Marta foi eleita seis vezes a melhor jogadora do mundo pela FIFA.",
         imagem: "imagens/curiosidade-marta.webp",
-        alt: "Camisa 10 da seleção brasileira feminina"
+        alt: "Marta com os seis troféus de melhor jogadora do mundo que conquistou"
     }
 ];
 
